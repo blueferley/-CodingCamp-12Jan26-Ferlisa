@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --primary-color: #3c0e18;
+    --secondary-color: #a48a91;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1250px;
+    margin: 0 auto;
+    align-items: center;
+    height: 80px;
+}
+
+.navbar .nav-brand h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav-menu li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.nav-menu li a {
+    font-size: large;
+    font-weight: 650;
+    color: var(--secondary-color);
+    transition: 0.3s;
+}
+
+.nav-menu li a::after {
+    content: "";
+    display: block;
+    border-bottom: 0.1px solid var(--primary-color); 
+    background-color: var(--primary-color);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav-menu li a:hover{
+    color: var(--primary-color);
+}
+
+.nav-menu li a:hover::after {
+    width: 100%;
+}
+
+
+
+    .navbar .nav-brand
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-brand .btn-menu {
+        color: var(--primary-color);
+        margin-right: 20px;
+        font-size: 20px;
+        display: none;
+    }
+
+    /* style banner */
+
+    main{
+        background-color: #efefef;
+        top: -60px;
+    }
+
+    main .container{
+        position: relative;
+        width: 100%;
+        height: 100%; 
+        overflow: hidden; 
+    }
+
+    main img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+ 
+    }
+
+    main .tagline {
+        position: absolute;
+        top: 60%;
+        left: 8%;
+        transform: translateY(-50%);
+        color: white;
+        max-width: 500px;
+    }
+    main .tagline .tag {
+        font-size: 40px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    main .tagline p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    /* style menu */
+    #menu .container {
+        max-width: 1250px;
+        margin: auto;
+        padding: 60px 0 60px;
+        text-align: center;
+    }
+    #menu .menu-title {
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+    }
+
+    .galeri {
+    display: flex;
+    gap: 30px;           
+    justify-content: center;
+    align-items: stretch;
+    }
+
+    .card {
+    width: 300px;
+    height: 420px;
+    padding: 20px;          
+    text-align: center;
+    }
+
+    .galeri .card img   {
+    width: 100%;           
+    max-width: 150px;    
+    margin-bottom: 15px;
+}
+    /* responsive mobile */
+@media (max-width: 567px) {
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        height: 100%;
+        width: 50%;
+        top: 80px;
+        background-color: var(--secondary-color);
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    .navbar .nav-menu a {
+        color: white;
+        font-size: 15px;
+
+    }
+
+    .nav-menu li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .nav-menu li a::after {
+        transform-origin: left;
+    }
+    .nav-menu li a:hover::after {
+        transform: scaleX(0.35);
+    }
+
+    .nav-brand .btn-menu {
+        display: block;
+    }
+
+    .navbar .nav-menu.active {
+        left: 0;
+    }
+
+/* style banner */
+    main .container{
+        position: relative;
+        width: 100%;
+        height: 90vh; 
+        overflow: hidden; 
+    }
+
+
+    main .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    main .tagline {
+        max-width: 250px;
+        padding-bottom: 10px;
+        margin-top: 130px;
+}
+   main .tagline .tag {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    main .tagline p {
+        font-size: 18px;
+    }   
+
+    main .tagline p.deskripsi {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+}
