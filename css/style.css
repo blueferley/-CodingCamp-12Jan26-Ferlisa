@@ -443,8 +443,33 @@ nav {
         margin-bottom: 30px;
     }
 
-    .about-content {
-        flex-direction: column;
-        text-align: center;
+     .about-content {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        gap: 10px;
+    }
+
+    .about-text {
+        flex: 0.6; 
+        text-align: left; 
+    }
+
+    .about-image {
+        flex: 0.4;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .about-image img {
+        display: block;   /* PENTING supaya muncul */
+        width: 100%;      /* sesuaikan container */
+        height: auto;
+        max-width: 150px; /* batasi ukuran */
+        margin: 0;
     }
 }
