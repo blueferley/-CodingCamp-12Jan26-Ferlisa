@@ -27,7 +27,7 @@
               </div>
                 <ul class="nav-menu" id="menubar">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Portfolio</a></li>
+                    <li><a href="#menu">Menu</a></li>
                     <li><a href="#about">Our Profile</a></li>
                     <li><a href="#message">Message Us</a></li>
                   </ul>
@@ -38,38 +38,80 @@
     <!-- Main content -->
     <main id="home">
         <div class="container">
-            <img src="image/picture.jpg" alt="banner">
+            <img src="image/picture.jpg" alt="banner" class="fade" id="banner">
             <div class="tagline">
-            <h2 class="tag" id="welcome-speech">Welcome to Our Space,</h2>
-            <p>Your favorite coffee shop in town.</p>
-            <p class="deskripsi"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim aliquid debitis quas. Eum, eveniet inventore.
+            <h2 class="tag" id="welcome-speech"></h2>
+            <p class="fade">Your favorite coffee shop in town.</p>
+            <p class="deskripsi fade"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim aliquid debitis quas. Eum, eveniet inventore.
             </div>
         </div>
     </main>
 
     <section id="menu">
-        <div class="container"> 
+        <div class="container">     
             <h1 class="menu-title">Features</h1>
             <div class="galeri">
                 <div class="card">
-                    <img src="image/coffee1.png" alt="coffee1">
-                    <h3>Espresso</h3>
-                    <p>A strong and bold coffee shot to kickstart your day.</p>
+                    <img src="image/coffee1.png" alt="coffee1" class="card-img">
+                    <h3 class="card-text">Espresso</h3>
+                    <p class="card-text">A strong and bold coffee shot to kickstart your day.</p>
                 </div>
                 <div class="card">
-                    <img src="image/coffee2.png" alt="coffee2">
-                    <h3>Cappuccino</h3>
-                    <p>A perfect blend of espresso, steamed milk, and froth.</p>
+                    <img src="image/coffee2.png" alt="coffee2" class="card-img">
+                    <h3 class="card-text">Cappuccino</h3>
+                    <p class="card-text">A perfect blend of espresso, steamed milk, and froth.</p>
                 </div>
                 <div class="card">
-                    <img src="image/coffee3.png" alt="coffee3">
-                    <h3>Latte</h3>
-                    <p>Smooth and creamy, topped with a touch of art.</p>
+                    <img src="image/coffee3.png" alt="coffee3" class="card-img">
+                    <h3 class="card-text">Latte</h3>
+                    <p class="card-text">Smooth and creamy, topped with a touch of art.</p>
                 </div>
             </div>
         </div>
 
     </section>
+
+<!-- profile -->
+
+<section id="about">
+    <div class="container">
+        <h2 class="about-title">Our Profile</h2>
+
+        <div class="about-content">
+            <div class="about-text">
+                <p class="about-desc">
+                    <b>Kopikiko & Co</b> hadir sebagai ruang hangat bagi siapa saja yang ingin menikmati kopi dengan suasana yang nyaman dan penuh cerita. Kami percaya bahwa secangkir kopi bukan hanya soal rasa, tetapi juga tentang momen—tempat orang-orang berhenti sejenak dari rutinitas, berbagi obrolan, dan menemukan inspirasi baru.
+                </p>    
+
+                <p>
+                    Kami percaya kopi bukan sekadar minuman, tapi ruang untuk
+                    berbagi cerita dan ide.
+                </p>
+            </div>
+
+            <div class="about-image">
+                <img src="image/about.jpg" alt="About Us">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="message">
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form id="messageForm">
+      <input type="text" id="name" placeholder="Name">
+      <input type="email" id="email" placeholder="Email">
+      <textarea id="messageText" placeholder="Message"></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+</section>
+
     <!-- Footer content -->
     <footer>
         <p>&copy; 2024 Kopikiko. All rights reserved.</p>
